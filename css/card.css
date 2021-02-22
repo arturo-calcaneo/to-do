@@ -1,3 +1,34 @@
 .card.to-do-list{
     width: 300px;
 }
+
+.card-footer-item > span{
+    position: relative;
+    bottom: 1px;
+    left: 3px;
+}
+
+.card.to-do-list .card-image{
+    position: relative;
+}
+
+.card.to-do-list .card-image > .text-desc{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card.to-do-list .card-image > .text-desc > span{
+    color: #ffffff;
+    
+    font-size: 1.5rem;
+}
+
+.card.to-do-list .card-content{
+    overflow-y: scroll;
+    max-height: 225px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
