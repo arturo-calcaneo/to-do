@@ -6,19 +6,22 @@
         <title>To-Do List</title>
         <!-- Bulma CSS -->
         <link rel="stylesheet" type="text/css" href="libraries/bulma/css/bulma.min.css" />
+        <!-- FontAwesome 5 -->
+        <link rel="stylesheet" type="text/css" href="libraries/fontawesome/css/all.min.css" />
+        <script src="libraries/fontawesome/js/all.min.js"></script>
         <!-- Website CSS -->
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <link rel="stylesheet" type="text/css" href="css/card.css" />
     </head>
     <body>
-        <div class="container pt-6">
+        <div class="container to-do-list-container">
             <!-- Card de To-do List -->
             <center>
-                <div class="card">
+                <div class="card to-do-list">
                     <!-- Imagen del Card -->
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://picsum.photos/200/300?random=1" alt=" "/>
+                            <img src="https://picsum.photos/300/225?random=2" alt=" "/>
                         </figure>
                     </div>
                     <!-- Cuerpo del Card -->
@@ -29,7 +32,10 @@
                     </div>
                     <!-- Pié del Card -->
                     <footer class="card-footer">
-                        <a href="#" class="card-footer-item">Agregar</a>
+                        <a href="#" class="card-footer-item">
+                            <i class="fas fa-plus"></i>
+                            Agregar
+                        </a>
                     </footer>
                 </div>
             </center>

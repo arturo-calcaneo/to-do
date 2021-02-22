@@ -3,3 +3,8 @@ body{
     height: 100%;
     background-color: whitesmoke;
 }
+
+.to-do-list-container{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
