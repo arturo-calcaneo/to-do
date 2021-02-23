@@ -13,6 +13,7 @@
         <!-- Website CSS -->
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <link rel="stylesheet" type="text/css" href="css/card.css" />
+        <link rel="stylesheet" type="text/css" href="css/content.css" />
     </head>
     <body>
         <div class="container to-do-list-container">
@@ -30,15 +31,63 @@
                     </div>
                     <!-- Cuerpo del Card -->
                     <div class="card-content">
-                        <div class="content pt-2 pb-3">
+                        <div class="content pt-1 pb-3">
                             <div class="block">
-                                Block Number 1
+                                <div class="columns">
+                                    <div class="column to-do-status">
+                                        <i class="icon-ident"></i>
+                                        <!-- <i class="far fa-circle"></i> -->
+                                        <i class="fas fa-check-circle on-green"></i>
+                                    </div>
+                                    <div class="column is-four-fifths to-do-text">
+                                        <input type="text" class="input-to-do" value="Block One" />
+                                    </div>
+                                    <div class="column to-do-trash">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                </div>
                             </div>
+
                             <div class="block">
-                                Block Number 2
+                                <div class="columns">
+                                    <div class="column">
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="column is-four-fifths">
+                                        <input type="text" class="input-to-do" value="Block Two" />
+                                    </div>
+                                    <div class="column">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                </div>
                             </div>
+
                             <div class="block">
-                                Block Number 3
+                                <div class="columns">
+                                    <div class="column">
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="column is-four-fifths">
+                                        <input type="text" class="input-to-do" value="Block Three" />
+                                    </div>
+                                    <div class="column">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block">
+                                <div class="columns">
+                                    <div class="column">
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="column is-four-fifths">
+                                        <input type="text" class="input-to-do" value="Block Four" />
+                                    </div>
+                                    <div class="column">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -46,14 +95,20 @@
                     <footer class="card-footer">
                         <a href="#" class="card-footer-item new-list">
                             <i class="fas fa-plus"></i>
-                            <span>Nueva Lista</span>
+                            <span>Nuevo</span>
+                        </a>
+                        <a href="#" class="card-footer-item save-all">
+                            <i class="fas fa-save"></i>
+                            <span>Guardar Todo</span>
                         </a>
                     </footer>
                 </div>
             </center>
         </div>
+
         <!-- Website Scripts -->
         <script src="js/span.js"></script>
+        <script src="js/todoContent.js"></script>
         <script src="js/index.js"></script>
     </body>
 </html>

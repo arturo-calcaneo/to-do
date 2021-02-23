@@ -5,7 +5,7 @@
 .card-footer-item > span{
     position: relative;
     bottom: 1px;
-    left: 3px;
+    left: 4px;
 }
 
 .card.to-do-list .card-image{
@@ -34,5 +34,33 @@
 }
 
 .card-content > .content .block{
-    
+    padding-bottom: 0.8rem;
+}
+
+.card-content > .content .block .columns{
+    display: flex !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+}
+
+.card-content > .content .block .columns .column{
+    padding: 0 !important;
+}
+
+.card-content > .content .block .columns .column:first-child{
+    text-align: left;
+}
+
+.card-content > .content .block .columns .column:nth-child(2){
+    text-align: left;
+}
+
+.card-content > .content .block .columns .column:last-child{
+    text-align: right;
+}
+
+.card-content > .content .block .columns .column.is-four-fifths{
+    flex: none !important;
+    width: 80% !important;
 }

@@ -14,3 +14,7 @@ body{
     padding-top: 5%;
     padding-bottom: 5%;
 }
+
+.on-green{
+    color: rgba(37, 184, 37, 0.87);
+}

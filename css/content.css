@@ -1,0 +1,10 @@
+.input-to-do{
+    position: relative;
+    width: 100%;
+
+    border: 0;
+    padding: 4px;
+    transition: 500ms;
+    outline: none;
+    bottom: 1px;
+}
