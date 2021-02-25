@@ -5,9 +5,14 @@
     border: 0;
     font-size: 87%;
     padding: 4px;
-    transition: 500ms;
+    transition: 450ms;
     outline: none;
     bottom: 1px;
+}
+
+.input-to-do[disabled="true"]{
+    background-color: transparent;
+    text-decoration: line-through;
 }
 
 .card-content > .content .block .columns > .column:first-child{
