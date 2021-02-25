@@ -38,3 +38,9 @@
 .card-content > .content .block .columns > .column:last-child:active::before{
     opacity: 1;
 }
+
+.messageEmptyContent{
+    position: relative;
+    top: 5px;
+    font-size: 107%;
+}

@@ -38,9 +38,31 @@ const newListStructure= function(){
     return block;
 };
 
+const messageEmptyContent= function(){
+    // Si ninguna lista ha sido agregada
+    if(document.querySelector('.content').children.length == 0){
+        document.querySelector('.content').innerHTML= `
+            <span class="messageEmptyContent">
+                <i class="fas fa-calendar-plus"></i>
+                Crea una nueva lista para comenzar...
+            </span>`;
+    }else{
+        // Si existe el span con dicho mensaje
+        if(document.querySelector('.messageEmptyContent')){
+            // Eliminarlo ya que hay listas disponibles
+            document.querySelector('.messageEmptyContent').remove();
+        }
+    }
+}
+
 function todoFooter(){
+    // Mostrar un mensaje cuando no haya ninguna lista creada
+    messageEmptyContent();
     // Si se presiona el botón de nueva lista
-    newListClick(function(event){ document.querySelector('.content').appendChild(newListStructure()); });
+    newListClick(function(event){ 
+        document.querySelector('.content').appendChild(newListStructure());
+        messageEmptyContent();
+    });
     // Si se presiona el botón guardar todo
     saveAllClick(function(event){ saveTodo(); });
 }

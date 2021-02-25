@@ -1,0 +1,7 @@
+.new-list{
+    color:rgba(33, 163, 33, 0.87);
+}
+
+.new-list:hover{
+    color: #000000;
+}
