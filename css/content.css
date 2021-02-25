@@ -3,8 +3,17 @@
     width: 100%;
 
     border: 0;
+    font-size: 87%;
     padding: 4px;
     transition: 500ms;
     outline: none;
     bottom: 1px;
+}
+
+.card-content > .content .block .columns > .column:first-child{
+    cursor: pointer !important;
+}
+
+.to-do-trash{
+    cursor: pointer !important;
 }

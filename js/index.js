@@ -33,3 +33,7 @@ function allInputOnEnter(callback){
         });
     }
 }
+
+function parseBoolean(str){
+    return ( str === "" || str === "0" || str.length < 1 || str === "false") ? false : true;
+}
