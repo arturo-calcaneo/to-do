@@ -21,15 +21,13 @@ const saveTodo= function(){
         //color: '#ffffff',
         backgroundColor: 'rgba(37, 184, 37, 0.87)',
         progressBar: false,
-        timeout: 1900
+        timeout: 1200
     });
 };
 
 function todoContent(){
     // Si se presiona enter en algun input
     allInputOnEnter(function(event){ saveTodo(); });
-    // Si se presiona el botón guardar todo
-    saveAllClick(function(event){ saveTodo(); });
 }
 
 // Cuando se marque como completado
