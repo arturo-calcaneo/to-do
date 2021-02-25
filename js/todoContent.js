@@ -21,7 +21,7 @@ const saveTodo= function(){
         //color: '#ffffff',
         backgroundColor: 'rgba(37, 184, 37, 0.87)',
         progressBar: false,
-        timeout: 1200
+        timeout: 1250
     });
 };
 
