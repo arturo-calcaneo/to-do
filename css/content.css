@@ -19,6 +19,22 @@
     cursor: pointer !important;
 }
 
-.to-do-trash{
+.card-content > .content .block .columns > .column:last-child{
     cursor: pointer !important;
+}
+
+.card-content > .content .block .columns > .column:last-child::before{
+    position: absolute;
+    transition: opacity 150ms ease;
+    content: " ";
+    width: 28px;
+    height: 28px;
+    border-radius: 50px 50px;
+    transform: translateX(-7px) translateY(-1px);
+    opacity: 0;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.card-content > .content .block .columns > .column:last-child:active::before{
+    opacity: 1;
 }
