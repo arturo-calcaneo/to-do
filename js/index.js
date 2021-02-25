@@ -3,12 +3,17 @@ window.onload= function(){
     /**
      * Función para cargar contenido en el <span>
      */
-    textView();
+    todoHeader();
 
     /**
      * Función para agregar evento al contenido del to-do
      */
     todoContent();
+
+    /**
+     * Función para agregar eventos al footer del to-do
+     */
+    todoFooter();
 };
 
 function newListClick(callback){

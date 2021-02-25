@@ -75,9 +75,9 @@ const day= function(number){
     return _day;
 }
 
-function textView(){
-    var textView= document.querySelector('.text-desc > span');
+function todoHeader(){
+
+    // Cargar dia, mes y día numérico en el span
     var date= new Date();
-    
-    textView.innerText= `${day(date.getDay())}, ${month(date.getMonth())} ${date.getDate()}`;
+    document.querySelector('.text-desc > span').innerText= `${day(date.getDay())}, ${month(date.getMonth())} ${date.getDate()}`;
 }
