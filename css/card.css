@@ -27,7 +27,7 @@
 
 .card.to-do-list .card-content{
     overflow-y: scroll;
-    max-height: 225px;
+    max-height: 236px;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -62,4 +62,14 @@
 .card-content > .content .block .columns .column.is-four-fifths{
     flex: none !important;
     width: 80% !important;
+}
+
+@media screen and (max-width: 400px){
+    .card.to-do-list{
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .container{
+        margin: 0 !important;
+    }
 }

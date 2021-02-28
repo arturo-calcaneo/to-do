@@ -11,6 +11,13 @@ window.onload= function(){
     todoContent();
 
     /**
+     * Función para darle altura maxima al contenido en móbiles
+     */
+    if(window.innerWidth < 401){
+        contentMaxHeight();
+    }
+
+    /**
      * Función para cargar las listas
      */
     cargarListas();
@@ -51,7 +58,7 @@ function onFinishKey(){
     // Mostrar como guardando
     document.querySelector('.saving.button').classList.add('is-loading');
     document.querySelector('.saving.button > .check-circle-saving').style.display= 'none';
-    
+
     clearTimeout(timeOut);
     timeOut= setTimeout(function(){
         // Guardar todo
@@ -65,6 +72,10 @@ function onFinishKey(){
 function deleteList(event){
     event.parentElement.parentElement.remove();
     saveTodo();
+}
+
+function contentMaxHeight(){
+    document.querySelector('.card-content').style.maxHeight= (window.innerHeight - 350) + 'px';
 }
 
 function getObjectLength(object){

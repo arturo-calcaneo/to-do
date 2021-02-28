@@ -11,10 +11,24 @@ body{
 .to-do-list-container{
     width: 100%;
     height: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 2.5%;
 }
 
 .on-green{
     color: rgba(37, 184, 37, 0.87);
+}
+
+@media screen and (max-width: 400px){
+    .to-do-list-container{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 0;
+    }
+
+    .to-do-list-container > center{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
 }
