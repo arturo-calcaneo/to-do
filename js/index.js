@@ -13,9 +13,9 @@ window.onload= function(){
     /**
      * Función para darle altura maxima al contenido en móbiles
      */
-    if(window.innerWidth < 401){
+    /*if(window.innerWidth < 401){
         contentMaxHeight();
-    }
+    }*/
 
     /**
      * Función para cargar las listas
