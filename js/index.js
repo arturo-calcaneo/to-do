@@ -75,7 +75,7 @@ function deleteList(event){
 }
 
 function contentMaxHeight(){
-    document.querySelector('.card-content').style.maxHeight= (window.innerHeight - 350) + 'px';
+    document.querySelector('.card-content').style.maxHeight= (window.innerHeight - 334) + 'px';
 }
 
 function getObjectLength(object){
