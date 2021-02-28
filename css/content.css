@@ -17,10 +17,14 @@
 
 .card-content > .content .block .columns > .column:first-child{
     cursor: pointer !important;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .card-content > .content .block .columns > .column:last-child{
     cursor: pointer !important;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .card-content > .content .block .columns > .column:last-child::before{
@@ -43,4 +47,11 @@
     position: relative;
     top: 5px;
     font-size: 107%;
+}
+
+.loading{
+    position: relative;
+    top: 5px;
+    border:0;
+    font-size: 195%;
 }

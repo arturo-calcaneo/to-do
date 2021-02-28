@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content=""/>
-        <title>To-Do List</title>
+        <meta name="description" content="Aplicación para realizar lista de que hacer. Desarrollado por Arturo Calcaneo Badillo."/>
+        <link rel="icon" href="images/list.png" />
+        <title>Lista de Pendientes</title>
         <!-- Bulma CSS -->
         <link rel="stylesheet" type="text/css" href="libraries/bulma/css/bulma.min.css" />
         <!-- FontAwesome 5 -->
@@ -17,6 +18,7 @@
         <script src="libraries/cuid/browser-cuid.min.js"></script>
         <!-- Website CSS -->
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/saving.css" />
         <link rel="stylesheet" type="text/css" href="css/card.css" />
         <link rel="stylesheet" type="text/css" href="css/content.css" />
         <link rel="stylesheet" type="text/css" href="css/footer.css" />
@@ -31,13 +33,18 @@
                         <div class="text-desc">
                             <span></span>
                         </div>
+                        <div class="saving button">
+                            <i class="fas fa-check-circle check-circle-saving"></i>
+                        </div>
                         <figure class="image is-4by3">
                             <img src="https://picsum.photos/300/225?random=2" alt=" "/>
                         </figure>
                     </div>
                     <!-- Cuerpo del Card -->
                     <div class="card-content">
-                        <div class="content pt-2 pb-3"></div>
+                        <div class="content pt-2 pb-3">
+                            <span class="loading button is-loading"></span>
+                        </div>
                     </div>
                     <!-- Pié del Card -->
                     <footer class="card-footer">
@@ -45,10 +52,10 @@
                             <i class="fas fa-plus"></i>
                             <span>Nuevo</span>
                         </a>
-                        <a href="#" class="card-footer-item save-all">
+                        <!-- <a href="#" class="card-footer-item save-all">
                             <i class="fas fa-save"></i>
                             <span>Guardar</span>
-                        </a>
+                        </a> -->
                     </footer>
                 </div>
             </center>
@@ -58,6 +65,7 @@
         <script src="js/todoHeader.js"></script>
         <script src="js/todoContent.js"></script>
         <script src="js/todoFooter.js"></script>
+        <script src="js/storage.js"></script>
         <script src="js/index.js"></script>
     </body>
 </html>

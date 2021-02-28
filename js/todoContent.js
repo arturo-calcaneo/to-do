@@ -10,19 +10,19 @@ const normalCircle= function(){
             </svg>`;
 };
 
-const saveTodo= function(){
-    iziToast.success({
-        theme: 'dark',
-        //icon: null,
-        title: 'Guardado',
-        //message: 'La lista fue actualizada.',
-        //messageColor: '#ffffff',
-        //titleColor: '#ffffff',
-        //color: '#ffffff',
-        backgroundColor: 'rgba(37, 184, 37, 0.87)',
-        progressBar: false,
-        timeout: 1250
-    });
+const saveTodo= function(notify= true){
+    // Guardar toda la información
+    actualizarLista();
+    if(notify){
+        // Notificar que ha sido guardado todo
+        iziToast.success({
+            theme: 'dark',
+            title: 'Guardado',
+            backgroundColor: 'rgba(37, 184, 37, 0.87)',
+            progressBar: false,
+            timeout: 1200
+        });
+    }
 };
 
 function todoContent(){
@@ -49,4 +49,6 @@ function isComplete(event){
         // Cambiar estado de completo
         event.setAttribute('complete', true);
     }
+
+    saveTodo(false);
 }
