@@ -71,7 +71,7 @@ function onFinishKey(){
 
 function deleteList(event){
     event.parentElement.parentElement.remove();
-    saveTodo();
+    saveTodo(false);
 }
 
 function contentMaxHeight(){
